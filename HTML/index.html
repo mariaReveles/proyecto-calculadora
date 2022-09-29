@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>Calculadora mrs </title>
+</head>
+<h1 align=center >Calculadora básica</h1>
+<p align=center>creada por María Reveles</p>
+    <body>
+        <section class="container-sm" style="max-width: 500px;">
+            <div class="container-sm">
+                <div class="row my-5 text-center">
+        
+       <!--Casilla izquierda-->
+        <div class="col my-auto">
+        <p>
+            <input type="number" placeholder="FIRST NUMBER" id="firstNumber" required>
+        </p>
+        </div>
+        <!--Casilla derecha-->
+       <div class="col my-auto">
+        <p>
+            <input type="number" placeholder="SECOND NUMBER" id="secondNumber" required>
+        </p>
+            </div>
+    
+        <!--Botón dropdown/ operaciones-->
+        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+            <input type="radio" class="btn-check" name="btnradio" id="add" autocomplete="off" checked>
+            <label class="btn btn-outline-success" for="add" onclick = "add()">+</label>
+          
+            <input type="radio" class="btn-check" name="btnradio" id="subtract" autocomplete="off">
+            <label class="btn btn-outline-success" for="subtract" onclick = "subtract()">-</label>
+          
+            <input type="radio" class="btn-check" name="btnradio" id="product" autocomplete="off">
+            <label class="btn btn-outline-success" for="product" onclick = "product()">*</label>
+
+            <input type="radio" class="btn-check" name="btnradio" id="divide" autocomplete="off">
+            <label class="btn btn-outline-success" for="divide" onclick = "divide()">/</label>
+          </div>
+    
+       <!--Resultados-->
+       <div  class="col my-4"></div>
+        <p class="text-bold">
+            your anwser is: <span class="h2" id="answer" ></span>
+        </p>
+    </div>
+        </div>
+    </div>
+    </section>
+    
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="../JavaScript/index2.js"></script>
+</body>
+</html>
